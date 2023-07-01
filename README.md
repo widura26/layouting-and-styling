@@ -1,2 +1,2 @@
 # tailwind
-it's project tailwind, but i'm forget to rename a folder
+it's not project tailwind, i just forget to rename a folder
