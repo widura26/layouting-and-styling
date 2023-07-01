@@ -1,0 +1,211 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-navbar{
+  background-color: rgb(6, 110, 222);
+  padding: 20px 50px 20px 50px;
+  width: auto;
+}
+
+.logo-menu{
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+  width: 100%;
+}
+.menu ul{
+  display: flex;
+  gap:10px;
+}
+.logo h1{
+  color: #fff;
+}
+
+.menu ul li {
+  color: #fff;
+  list-style: none;
+}
+
+.menu ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+#section-cards{
+  width: 100%;
+  flex: 2;
+  min-height: calc(100vh - 67.200px);
+  /* background-color: rgb(233, 195, 4); */
+  display: inline-block;
+  /* //display bawaan dari tag section sendiri adalah block, jadi */
+    /* Properti display: block; menyebabkan elemen <section> akan membentuk blok penuh dan mengambil lebar penuh dari container yang mengandungnya. Ini berarti elemen <section> akan menempati baris baru dan secara otomatis mengisi lebar yang tersedia.
+  Properti display: block; pada elemen <section> juga berarti elemen tersebut memiliki margin atas dan bawah secara default. Ini berarti elemen <section> akan memiliki jarak kosong di atas dan di bawahnya, yang membantu memisahkan elemen-elemen sebelum dan sesudahnya.
+  Dengan properti display: block;, elemen <section> akan menjadi elemen blok yang dapat diberikan lebar, tinggi, padding, dan margin sesuai dengan kebutuhan desain halaman web Anda. */
+}
+
+#section-cards .container{
+  margin: 50px;
+}
+
+#section-cards .container .title{
+  display: flex;
+  justify-content: center;
+}
+
+.cards{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto , 1fr));
+  /* grid-template-columns: repeat(auto-fit, 1fr); */
+  /* grid-template-rows: repeat(auto-fit, 1fr); */
+  /* grid-template-rows: repeat(auto-fit, minmax(270px, 1fr)); */
+  gap: 10px;
+
+}
+
+.card{
+  /* grid-row-start: 1; */
+  background-color: #fff;
+  border: 1px solid #bcbcbc;
+  padding: 20px;
+}
+
+.card > :nth-child(n+2){
+  margin-top: 10px; 
+  /* height: 100%; */
+}
+
+.card-title > p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.card-content{
+  -webkit-line-clamp: 2;
+}
+.card-content > p {
+  width: auto;
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.date-author{
+  display: flex;
+  place-items: center;
+  justify-content: space-between;
+}
+
+.date-author p{
+  font-size: 14px;
+}
+
+.author{
+  display: flex;
+  place-items: center;
+  gap: 10px;
+}
+.avatar{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #bababa;
+}
+
+#aside-section{
+  display: flex;
+}
+aside{
+  /* padding: 50px; */
+  flex: 1;
+}
+
+aside .container{
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.aside-title{
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(1, minmax(400px, 1fr));
+  }
+
+  #aside-section{
+    display: block;
+  }
+}
+
+@media (max-width: 468px) {
+  .nav-navbar{
+    background-color: rgb(6, 110, 222);
+    padding: 20px 50px 20px 50px;
+    width: auto;
+    height: 27.200px;
+    transition: all 0.3s ease;
+  }
+
+  .active{
+    height: 55.600px;
+  }
+
+  .menu{
+    display: none;
+  }
+
+  .menu-active{
+    display: block;
+  }
+
+
+  .cards {
+    grid-template-columns: repeat(1, minmax(auto, 1fr));
+  }
+  #section-cards .container{
+    margin: 25px;
+  }
+
+  aside .container{
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* justify-content: space-between; */
+    place-items: center;
+    width: 100%;
+  }
+
+  .menu ul{
+    display: flex;
+    /* justify-content: space-between; */
+    gap:10px;
+  }
+
+  .date-author{
+    font-size: 12px;
+  }
+
+}
+
+

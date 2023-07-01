@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>MyBlog</title>
+</head>
+<body>
+  <nav class="nav-navbar">
+    <div class="logo-menu">
+      <div class="logo">
+        <h1>MyBlog.com</h1>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Category</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="aside-section">
+    <section id="section-cards">
+      <div class="container"> 
+        <!-- jika container diberi margin, maka section akan diberi jarak antara nav -->
+        <div class="title">
+          <h1>List of cards</h1>
+        </div>
+  
+        <div class="cards">
+        </div>
+      </div>
+    </section>
+    <aside>
+      <div class="container">
+        <div class="aside-title">
+          <h1>Recently</h1>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <p>How to make her love you</p>
+          </div>
+    
+          <div class="card-content">
+            <p> Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Nemo illum debitis cupiditate 
+            eum rem tempore eos, fugiat repudiandae eligendi 
+            asperiores facere nam quia. Exercitationem voluptate 
+            provident cumque consectetur necessitatibus dignissimos aliquid odit deserunt amet recusandae delectus incidunt architecto officia quia pariatur eveniet nisi iste 
+            placeat, quis voluptatem saepe ipsa eum?</p>
+          </div>
+          
+          <div class="date-author">
+            <div class="date">
+              <p>Widura Hasta</p>
+            </div>
+            <div class="author">
+              <div class="name">
+                <p>${blog.authorName}</p>
+              </div>
+              <div class="avatar"></div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <h5>${blog.title}</h5>
+          </div>
+    
+          <div class="card-content">
+            <p> Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Nemo illum debitis cupiditate 
+            eum rem tempore eos, fugiat repudiandae eligendi 
+            asperiores facere nam quia. Exercitationem voluptate 
+            provident cumque consectetur necessitatibus dignissimos aliquid odit deserunt amet recusandae delectus incidunt architecto officia quia pariatur eveniet nisi iste 
+            placeat, quis voluptatem saepe ipsa eum?</p>
+          </div>
+          
+          <div class="date-author">
+            <div class="date">
+              <p>${blog.date}</p>
+            </div>
+            <div class="author">
+              <div class="name">
+                <p>${blog.authorName}</p>
+              </div>
+              <div class="avatar"></div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </aside>
+    
+  </div>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
