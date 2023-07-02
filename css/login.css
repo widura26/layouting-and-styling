@@ -134,7 +134,18 @@ input{
   width: 100px;
 }
 
+footer{
+  background-color: rgb(6, 110, 222);
+  padding: 10px;
+  color: #fff;
+  /* font-size: 10; */
+}
 
+footer .copyright{
+  display: flex;
+  justify-content: center;
+  
+}
 
 @media (max-width: 768px) {
   #login-section .row{

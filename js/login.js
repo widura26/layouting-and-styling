@@ -12,6 +12,7 @@ const navBar = document.querySelector('.nav-navbar');
     // }
   });
 
+
   //login
   const inputUsername = document.querySelector('#inputUser');
   const inputPassword = document.querySelector('#inputPass');
@@ -33,5 +34,4 @@ const navBar = document.querySelector('.nav-navbar');
       alert('username atau password salah')
     }
   })
-  
   

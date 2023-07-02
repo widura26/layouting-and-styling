@@ -75,12 +75,14 @@
   background-color: #fff;
   border: 1px solid #bcbcbc;
   padding: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   /* transform: scale(1); */
-  transition: transform 1s;
+  /* transition: transform 1s; */
 }
 
 .card:hover {
-  transform: translateY(-10px);
+  /* transform: translateY(-10px); */
+  background-color: #e7e7e7;
 }
 
 .card > :nth-child(n+2){
@@ -126,6 +128,19 @@
   height: 30px;
   border-radius: 50%;
   background-color: #bababa;
+}
+
+footer{
+  background-color: rgb(6, 110, 222);
+  padding: 10px;
+  color: #fff;
+  /* font-size: 10; */
+}
+
+footer .copyright{
+  display: flex;
+  justify-content: center;
+  
 }
 
 #aside-section{
