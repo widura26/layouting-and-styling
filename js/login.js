@@ -11,3 +11,27 @@ const navBar = document.querySelector('.nav-navbar');
     //   console.log("open");
     // }
   });
+
+  //login
+  const inputUsername = document.querySelector('#inputUser');
+  const inputPassword = document.querySelector('#inputPass');
+  
+  const button  = document.querySelector('.button #submit');
+  const formMessage  = document.querySelector('form');
+
+  
+  formMessage.addEventListener('submit', event => {
+    event.preventDefault();
+    let valP = inputPassword.value;
+    let valU = inputUsername.value;
+    
+    if(valP === '260503'){
+      // console.log(`Halo ${valU} selamat datang`);
+      // window.location.href='dashboard';
+      alert(`halo ${valU} selamat datang`);
+    }else{
+      alert('username atau password salah')
+    }
+  })
+  
+  
