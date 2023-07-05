@@ -105,3 +105,20 @@ footer .copyright{
     gap:10px;
   }
 }
+
+/* .kotak-1 {
+  opacity: 0;
+  height: 2;
+}
+
+.kotak:hover .kotak-1 {
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+} */
+.code {
+  background-color: black;
+}
+.code pre code{
+  line-height: 2;
+  color: rgb(255, 0, 0);
+}

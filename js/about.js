@@ -1,4 +1,4 @@
-const navBar = document.querySelector('.nav-navbar');
+  const navBar = document.querySelector('.nav-navbar');
   const logoMenu = document.querySelector('.menu');
   // logoMenu.innerHTML = menu();
 
@@ -11,3 +11,4 @@ const navBar = document.querySelector('.nav-navbar');
     //   console.log("open");
     // }
   });
+
