@@ -16,7 +16,7 @@ const totalPrice = document.querySelector('.cart .total-price');
 
   const displayData = (datas) => {
     for(let data of datas){
-      console.log(data);
+      // console.log(data);
       const { title, description, price, stock, thumbnail } = data;
       gridCard.innerHTML += card( title, description, price, stock, thumbnail );
     }
